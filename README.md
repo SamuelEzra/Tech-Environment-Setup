@@ -21,7 +21,7 @@
 
 ## Introduction
 
-The purpose of this project is to guide you on how to install the Apps we will need in our DevOps journey. This will be especially applicable to Windows users.
+The purpose of this project is to guide you on how to install the Apps we will need in our DevOps journey.
 
 ---
 
@@ -29,12 +29,28 @@ The purpose of this project is to guide you on how to install the Apps we will n
 
 This versatile code editor would make working with and modifying codes and application files easy. To download and install, visit [VScode](https://code.visualstudio.com/).
 
-#### Installation Steps
+#### Installation Steps (Windows)
 - Double-click the downloaded .exe file to launch the installer.
 - Accept the license agreement and click Next.
 - Select additional options (like creating a desktop shortcut) and click Next.
 - Click Install and wait for the process to complete.
 - Once installed, click Finish to launch VS Code.
+
+#### For Linux
+Run the following command to install:
+```sh
+sudo apt install ./<file-name>.deb
+```
+Replace *file-name* with the actual name of the downloaded file.
+
+Open a terminal and navigate to the directory where the .rpm file was downloaded.
+
+Run the following command to install:
+```sh
+sudo rpm -i <file-name>.rpm
+```
+Replace *file-name* with the actual name of the downloaded file.
+
 
 ![vs_code](./vs_code.PNG)
 
@@ -45,12 +61,18 @@ This versatile code editor would make working with and modifying codes and appli
 
 With the Git bash terminal, you can run Linux commands and handle your version control from the command-line terminal. Download Git Bash from the site [Git](https://git-scm.com/downloads).
 
-#### Installation Steps
+#### Installation Steps (Windows)
 - Run the Installer
 - Locate the downloaded .exe file and double-click to launch the installer.
 - Follow the installation wizard
 - Click Install to begin the installation process.
 - Once complete, click Finish.
+
+#### For Linux
+```sh
+sudo apt update
+sudo apt install git
+```
 
 ![git](./git_bash.PNG)
 
@@ -73,6 +95,14 @@ With Virtual Box, you can run multiple operating systems and servers on the same
 - Follow the installation wizard.
 - Click Install and wait for the process to complete.
 - Once installed, click Finish
+
+#### For Linux
+Open a terminal and navigate to the directory where the installer was downloaded.
+
+For Debian-based systems (e.g., Ubuntu), install the .deb package:
+```sh
+sudo apt install ./<file-name>.deb
+```
 
 ![virtual_box](./Virtual_box.PNG)
 
@@ -111,6 +141,11 @@ Select Create a virtual hard disk now; Choose VDI (VirtualBox Disk Image) as the
 - Click Install Now and confirm your choices.
 - Wait for the installation to complete, then restart the virtual machine.
 
+> Post Installation
+```sh
+sudo apt update && sudo apt upgrade
+```
+
 ![Ububtu](./ubuntu.PNG)
 
 
@@ -129,6 +164,11 @@ Github is a version control platform that allows developers and DevOps engineers
 - Check your email for a verification code sent by GitHub.
 - Enter the code on the GitHub website to verify your email address.
 
+
+> Verify Installation
+```sh
+git --version
+```
 
 ![Github](./github.PNG)
 
@@ -165,6 +205,11 @@ Amazon Web Services or AWS is one of the major cloud providers in the world. AWS
 > Complete the Setup
 - Once your account is created, you’ll receive a confirmation email.
 - Log in to the AWS Management Console using your email and password.
+
+> Verify Installation
+```sh
+aws --version
+```
 
 
 ![AWS](./aws.PNG)
