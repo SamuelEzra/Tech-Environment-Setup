@@ -21,7 +21,11 @@
 
 ## Introduction
 
-The purpose of this project is to guide you on how to install the Apps we will need in our DevOps journey.
+The objective of this mini-project is to provide a step-by-step guide on guide on settiong up the right environment and installation of the required Applications needed to practice DevOps. 
+
+While this document provides a list of key DevOps tools, it is not exhaustive. As one progresses in this Dynamic field, more and more tools becme available.
+
+Follow the comprehensive guide in this document to install tools you would need as you begin your DevOps journey.
 
 ---
 
