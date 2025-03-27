@@ -1,79 +1,72 @@
 # Technical Environment Setup
 
-
-> DevOps (Mini-Project) I
+## DevOps (Mini-Project) I
 
 ---
 
-
 ### Table of Contents
 
-- [Introduction](#introduction)
-- [Visual Sudio Code](#VScode)
-- [Git](#Git)
-- [Virtual Box](#Virtual_Box)
-- [Ubuntu](#Ubuntu)
-- [Github Account](#Github)
-- [Amazon Web Services (AWS)](#AWS)
-- [Reference Links](#Refence-Links)
+1. [Introduction](#introduction)
+2. [Visual Studio Code](#visual-studio-code)
+3. [Git](#git)
+4. [Virtual Box](#virtual-box)
+5. [Ubuntu](#ubuntu)
+6. [GitHub Account](#github-account)
+7. [Amazon Web Services (AWS)](#amazon-web-services-aws)
+8. [Reference Links](#reference-links)
 
 ---
 
 ## Introduction
 
-The objective of this mini-project is to provide a step-by-step guide on guide on settiong up the right environment and installation of the required Applications needed to practice DevOps. 
+The objective of this mini-project is to provide a step-by-step guide on setting up the appropriate environment and installation of the required applications needed to practice DevOps.
 
-While this document provides a list of key DevOps tools, it is not exhaustive. As one progresses in this Dynamic field, more and more tools becme available.
+While this document provides a list of key DevOps tools, it is not exhaustive. As one progresses in this dynamic field, more tools become available.
 
-Follow the comprehensive guide in this document to install tools you would need as you begin your DevOps journey.
+Follow this comprehensive guide to install the tools you need as you begin your DevOps journey.
 
 ---
 
-## Visual Sudio Code
+## Visual Studio Code
 
-This versatile code editor would make working with and modifying codes and application files easy. To download and install, visit [VScode](https://code.visualstudio.com/).
+Visual Studio Code is a versatile code editor that makes working with and modifying code and application files easy. To download and install, visit [Visual Studio Code](https://code.visualstudio.com/).
 
-#### Installation Steps (Windows)
-- Double-click the downloaded .exe file to launch the installer.
-- Accept the license agreement and click Next.
-- Select additional options (like creating a desktop shortcut) and click Next.
-- Click Install and wait for the process to complete.
-- Once installed, click Finish to launch VS Code.
+### Installation Steps (Windows)
+- Double-click the downloaded `.exe` file to launch the installer.
+- Accept the license agreement and click **Next**.
+- Select additional options (e.g., creating a desktop shortcut) and click **Next**.
+- Click **Install** and wait for the process to complete.
+- Once installed, click **Finish** to launch VS Code.
 
-#### For Linux
+### Installation Steps (Linux)
 Run the following command to install:
-```sh
+```bash
 sudo apt install ./<file-name>.deb
 ```
-Replace *file-name* with the actual name of the downloaded file.
+Replace `<file-name>` with the actual name of the downloaded file.
+For `.rpm` files, navigate to the directory where the file was downloaded and execute:
 
-Open a terminal and navigate to the directory where the .rpm file was downloaded.
-
-Run the following command to install:
-```sh
+```bash
 sudo rpm -i <file-name>.rpm
 ```
-Replace *file-name* with the actual name of the downloaded file.
-
 
 ![vs_code](./vs_code.PNG)
-
 
 ---
 
 ## Git
 
-With the Git bash terminal, you can run Linux commands and handle your version control from the command-line terminal. Download Git Bash from the site [Git](https://git-scm.com/downloads).
+Git Bash provides the ability to run Linux commands and handle version control directly from the terminal. Download Git Bash from [Git](https://git-scm.com/downloads).
 
 #### Installation Steps (Windows)
-- Run the Installer
-- Locate the downloaded .exe file and double-click to launch the installer.
+- Locate the downloaded `.exe` file and double-click to launch the installer.
 - Follow the installation wizard
-- Click Install to begin the installation process.
-- Once complete, click Finish.
+- Click **Install** to begin the installation process.
+- Once complete, click **Finish**.
 
-#### For Linux
-```sh
+#### Installation Steps (Linux)
+Run the following commands:
+```bash
 sudo apt update
 sudo apt install git
 ```
@@ -83,28 +76,27 @@ sudo apt install git
 
 #### Verify Git Installation
 
-On Terminal, Enter the following command:
-```sh
+Execute the following command in the terminal:
+```bash
 git --version
 ```
 ---
 
 ## Virtual Box
 
-With Virtual Box, you can run multiple operating systems and servers on the same physical machine. This comes in handy when you want to connect to a server from a host. Click [Virtual Box](https://www.virtualbox.org/) to download and install Virtual Box.
+Virtual Box allows you to run multiple operating systems and servers on a single physical machine, making it essential for server-host interactions. Download Virtual Box from [VirtualBox](https://www.virtualbox.org/).
 
-#### How to Install Virtual Box
+#### Installation Steps (Windows)
 
-- Locate the downloaded .exe file and double-click it to start the installation.
-- Follow the installation wizard.
-- Click Install and wait for the process to complete.
-- Once installed, click Finish
+- Double-click the downloaded `.exe` file to start the installation
+- Follow the installation wizard instructions.
+- Click **Install** and wait for the process to complete.
+- Click **Finish** once the installation is done.
 
-#### For Linux
-Open a terminal and navigate to the directory where the installer was downloaded.
+#### Installation Steps (Linux)
+For Debian-based systems, use the following command:
 
-For Debian-based systems (e.g., Ubuntu), install the .deb package:
-```sh
+```bash
 sudo apt install ./<file-name>.deb
 ```
 
@@ -114,39 +106,53 @@ sudo apt install ./<file-name>.deb
 
 ## Ubuntu
 
-Ubuntu is an open-source operating system that powers increasingly more systems worldwide. It is one of the most popular Linux distributions available today. Download Ubuntu using the link [Ubuntu](https://ubuntu.com/download/desktop).
+Ubuntu is a popular open-source operating system, widely used for DevOps practices. Download it from [Ubuntu](https://ubuntu.com/download/desktop).
 
 
 #### How to Install Ubuntu on Virtual Box
 
-> Create a New Virtual Machine:
-- Click the New button in VirtualBox.
-- Enter a name for your virtual machine (e.g., "Ubuntu").
-- Set the Type to Linux and the Version to Ubuntu (64-bit).
-- Allocate memory (RAM) for the virtual machine. A minimum of 2GB (2048MB) is recommended, but 4GB or more is ideal.
-- Create a virtual hard disk:
-Select Create a virtual hard disk now; Choose VDI (VirtualBox Disk Image) as the file type; select Dynamically allocated for storage; set the disk size (e.g., 20GB or more) and click Create.
+Create a New Virtual Machine
+1. Click **New** in VirtualBox.
+2. Enter a name for your virtual machine (e.g., "Ubuntu").
+3. Set the Type to Linux and the Version to Ubuntu (64-bit).
+4. Allocate memory (RAM)—minimum of 2GB (2048MB) is recommended.
+5. Create a virtual hard disk:
+    
+    - Select **Create a virtual hard disk now**.
+    - Choose **VDI (VirtualBox Disk Image)**.
+    - Select **Dynamically allocated** storage.
+    - Set the disk size (e.g., 20GB or more) and click **Create**.
 
-> Configure the Virtual Machine
-- Select your newly created virtual machine and click Settings.
-- Go to the `Storage` section: Under `Controller: IDE`, click the empty disk icon; click the disk icon on the right and select Choose a disk file; browse to the Ubuntu ISO file you downloaded and select it.
-- Save your changes and close the settings.
+Configure the Virtual Machine
+1. Select your newly created virtual machine and click **Settings**.
+2. Go to the **Storage** section: 
 
-> Start the Virtual Machine
-- Select your virtual machine and click Start.
-- The Ubuntu installer will load from the ISO file.
+    - Under **Controller: IDE**, click the empty disk icon. 
+    - Click the disk icon on the right and select **Choose a disk file**.
+    - Browse to the Ubuntu ISO file and select it.
 
-> Install Ubuntu: Follow the on-screen instructions:
-- Select your language and click Install Ubuntu.
-- Choose your keyboard layout.
-- Select installation options (e.g., normal installation, updates, and third-party software).
-- Choose Erase disk and install Ubuntu (this only affects the virtual disk, not your actual computer).
-- Set up your user account by entering your name, username, and password.
-- Click Install Now and confirm your choices.
-- Wait for the installation to complete, then restart the virtual machine.
+3. Save your changes and close the settings.
 
-> Post Installation
-```sh
+Start the Virtual Machine
+1. Select your virtual machine and click **Start**.
+2. The Ubuntu installer will load from the ISO file.
+
+Install Ubuntu: 
+
+Follow these steps:
+1. Select your language and click **Install Ubuntu**.
+2. Choose your keyboard layout.
+3. Configure installation options (normal installation, updates, third-party software).
+4. Choose **Erase disk and install Ubuntu**.
+5. Set up your user account by providing your name, username, and password.
+6. Confirm settings and click **Install Now**.
+7. Once installation is complete, restart the virtual machine.
+
+Post Installation
+
+Run the following command:
+
+```bash
 sudo apt update && sudo apt upgrade
 ```
 
@@ -157,20 +163,21 @@ sudo apt update && sudo apt upgrade
 
 ## Github
 
-Github is a version control platform that allows developers and DevOps engineers alike to create, store, manage, and share their code. Create a Github account via the link [Github](https://github.com/).
+GitHub is a version control platform that enables developers to store, manage, and share their code. Create a GitHub account by visiting [Github](https://github.com/).
 
 
 #### Steps to Create a Github Account:
-- From the link, Click `Sign up`
-- Enter your email address.
-- Choose a username (this will be your GitHub identity).
-- Create a strong password.
-- Check your email for a verification code sent by GitHub.
-- Enter the code on the GitHub website to verify your email address.
+1. Click **Sign up**
+2. Enter your email address.
+3. Choose a username (your GitHub identity).
+4. Create a strong password.
+5. Check your email for a verification code sent by GitHub.
+6. Enter the code on the GitHub website to verify your email address.
 
 
-> Verify Installation
-```sh
+Verify Installation
+
+```bash
 git --version
 ```
 
@@ -178,40 +185,45 @@ git --version
 
 ---
 
-## Amazon Web Services
+## Amazon Web Services (AWS)
 
-Amazon Web Services or AWS is one of the major cloud providers in the world. AWS allows you to provision infrastructure and other services for your App to run. It offers flexibility, scalability, availability, etc. You can create a free AWS account via the link [AWS](https://aws.amazon.com/free/).
+AWS is a leading cloud platform that allows you to provision infrastructure and services for your applications. Create a free AWS account using [AWS](https://aws.amazon.com/free/).
 
 
-#### Steps to Create an Account in AWS
-> Enter Account Information
-- Provide your email address and choose a password.
-- Enter an AWS account name (this can be your name or your organization's name).
-- Click *Continue*.
+#### Steps to Create an AWS Account
+1. **Enter Account Information**
 
-> Add Contact Information
-- Choose the account type: Personal or Business.
-- Fill in your contact details, including your name, phone number, and address.
-- Accept the AWS Customer Agreement and click *Continue*.
+    - Provide your email address and choose a password.
+    - Enter an AWS account name (e.g., your name or organization name).
+    - Click **Continue**.
 
-> Add Payment Information
-- Enter your **credit card** or **debit card** details.
-- Click ***Verify*** and Add.
+2. **Add Contact Information**
 
-> Verify Your Identity
-- Enter your phone number and choose your preferred verification method (call or text).
-- Enter the verification code sent to your phone.
+    - Choose account type (Personal or Business).
+    - Fill in your contact details.
+    - Agree to the AWS Customer Agreement and click **Continue**.
 
-> Choose a Support Plan
-- Select a support plan. The Basic Plan is free and sufficient for most users.
-- Click *Continue*.
+3. **Add Payment Information**
+    - Provide credit or debit card details.
+    - Click **Verify** and Add.
 
-> Complete the Setup
-- Once your account is created, you’ll receive a confirmation email.
-- Log in to the AWS Management Console using your email and password.
+4. **Verify Your Identity**
+    - Enter your phone number and choose a verification method (call or text).
+    - Enter the received verification code.
 
-> Verify Installation
-```sh
+5. **Choose a Support Plan**
+    - Select a support plan (Basic Plan is free and sufficient for most users).
+    - Click **Continue**.
+
+6. Complete the Setup
+    - Check for a confirmation email
+    - Log in to the AWS Management Console using your credentials.
+
+**Verify Installation**
+
+Run:
+
+```bash
 aws --version
 ```
 
@@ -223,9 +235,9 @@ aws --version
 
 ## Refence Links
 
-- https://code.visualstudio.com/
-- https://git-scm.com/downloads
-- https://www.virtualbox.org/
-- https://github.com/
-- https://ubuntu.com/download/desktop
-- https://aws.amazon.com/free/
+- [Visual Studio Code](https://code.visualstudio.com/)
+- [Git](https://git-scm.com/downloads)
+- [VirtualBox](https://www.virtualbox.org/)
+- [Ubuntu](https://ubuntu.com/download/desktop)
+- [Github](https://github.com/)
+- [AWS](https://aws.amazon.com/free/)
